@@ -1,0 +1,13 @@
+mybatis:
+  # 配置包下的类型别名
+  type-aliases-package: com.heyuanhang.beans
+  # 显示SQL语句
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mappers/*Mapper.xml
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://localhost:3306/lianxi?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&ServerTimezone=Asia/Shanghai
+    password: 3145083560
+    driver-class-name: com.mysql.jdbc.Driver
